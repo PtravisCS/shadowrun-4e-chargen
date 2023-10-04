@@ -1,0 +1,14 @@
+{
+  "name": "shadowrun-char-builder-4e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "builder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Travis",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  }
+}

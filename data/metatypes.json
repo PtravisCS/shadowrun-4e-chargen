@@ -1,0 +1,3547 @@
+{
+	"chummer": {
+		"version": "-914",
+		"categories": {
+			"category": [
+				"Metahuman",
+				"Sapient Critter",
+				"Shapeshifter",
+				"Special"
+			]
+		},
+		"metatypes": {
+			"metatype": [
+				{
+					"name": "Human",
+					"category": "Metahuman",
+					"bp": "0",
+					"bodmin": "1",
+					"bodmax": "6",
+					"bodaug": "9",
+					"agimin": "1",
+					"agimax": "6",
+					"agiaug": "9",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "1",
+					"strmax": "6",
+					"straug": "9",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "2",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "2",
+					"edgmax": "7",
+					"edgaug": "7",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "10/25, Swim 5",
+					"source": "SR4",
+					"page": "66",
+					"metavariants": {
+						"metavariant": [{
+							"name": "Nartaki",
+							"bp": "25",
+							"qualities": {
+								"positive": {
+									"quality": ["Shiva Arms"]
+								},
+								"negative": {
+									"quality": [
+										"Distinctive Style",
+										"Striking Skin Pigmentation"
+									]
+								}
+							},
+							"source": "RC",
+							"page": "49"
+						}]
+					}
+				},
+				{
+					"name": "Ork",
+					"category": "Metahuman",
+					"bp": "20",
+					"bodmin": "4",
+					"bodmax": "9",
+					"bodaug": "13",
+					"agimin": "1",
+					"agimax": "6",
+					"agiaug": "9",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "3",
+					"strmax": "8",
+					"straug": "12",
+					"chamin": "1",
+					"chamax": "5",
+					"chaaug": "7",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "5",
+					"logaug": "7",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "2",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "10/25, Swim 5",
+					"qualities": {
+						"positive": {
+							"quality": ["Low-Light Vision"]
+						}
+					},
+					"bonus": "",
+					"source": "SR4",
+					"page": "66",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Hobgoblin",
+								"bp": "20",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Fangs",
+											"Low-Light Vision"
+										]
+									},
+									"negative": {
+										"quality": [
+											"Distinctive Style",
+											"Poor Self Control (Vindictive)"
+										]
+									}
+								},
+								"source": "RC",
+								"page": "49"
+							},
+							{
+								"name": "Ogre",
+								"bp": "20",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Low-Light Vision",
+											"Ogre Stomach"
+										]
+									},
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"source": "RC",
+								"page": "50"
+							},
+							{
+								"name": "Oni",
+								"bp": "25",
+								"qualities": {
+									"positive": {
+										"quality": ["Low-Light Vision"]
+									},
+									"negative": {
+										"quality": [
+											"Distinctive Style",
+											"Striking Skin Pigmentation"
+										]
+									}
+								},
+								"source": "RC",
+								"page": "51"
+							},
+							{
+								"name": "Satyr",
+								"bp": "25",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Low-Light Vision",
+											"Satyr Legs"
+										]
+									},
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"source": "RC",
+								"page": "51"
+							}
+						]
+					}
+				},
+				{
+					"name": "Dwarf",
+					"category": "Metahuman",
+					"bp": "25",
+					"bodmin": "2",
+					"bodmax": "7",
+					"bodaug": "10",
+					"agimin": "1",
+					"agimax": "6",
+					"agiaug": "9",
+					"reamin": "1",
+					"reamax": "5",
+					"reaaug": "7",
+					"strmin": "3",
+					"strmax": "8",
+					"straug": "12",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "2",
+					"wilmax": "7",
+					"wilaug": "10",
+					"inimin": "2",
+					"inimax": "11",
+					"iniaug": "16",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "8/20, Swim 4",
+					"qualities": {
+						"positive": {
+							"quality": ["Thermographic Vision"]
+						}
+					},
+					"bonus": "",
+					"source": "SR4",
+					"page": "66",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Gnome",
+								"bp": "25",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Arcane Arrester",
+											"Thermographic Vision"
+										]
+									},
+									"negative": {
+										"quality": [
+											"Distinctive Style",
+											"Neoteny"
+										]
+									}
+								},
+								"source": "RC",
+								"page": "54"
+							},
+							{
+								"name": "Haruman",
+								"bp": "50",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Low-Light Vision",
+											{
+												"_select": "AGI",
+												"__text": "Metagenetic Improvement"
+											},
+											"Monkey Paws",
+											"Functional Tail (Prehensile)"
+										]
+									},
+									"negative": {
+										"quality": [
+											"Distinctive Style",
+											"Unusual Hair"
+										]
+									}
+								},
+								"source": "RC",
+								"page": "55"
+							},
+							{
+								"name": "Koborokuru",
+								"bp": "35",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Celerity",
+											"Resistance to Pathogens and Toxins",
+											"Thermographic Vision"
+										]
+									},
+									"negative": {
+										"quality": [
+											"Distinctive Style",
+											"Unusual Hair"
+										]
+									}
+								},
+								"source": "RC",
+								"page": "53"
+							},
+							{
+								"name": "Menehune",
+								"bp": "25",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Resistance to Pathogens and Toxins",
+											"Thermographic Vision",
+											"Underwater Vision"
+										]
+									},
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"source": "RC",
+								"page": "54"
+							}
+						]
+					}
+				},
+				{
+					"name": "Elf",
+					"category": "Metahuman",
+					"bp": "30",
+					"bodmin": "1",
+					"bodmax": "6",
+					"bodaug": "9",
+					"agimin": "2",
+					"agimax": "7",
+					"agiaug": "10",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "1",
+					"strmax": "6",
+					"straug": "9",
+					"chamin": "3",
+					"chamax": "8",
+					"chaaug": "12",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "2",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "10/25, Swim 6",
+					"qualities": {
+						"positive": {
+							"quality": ["Low-Light Vision"]
+						}
+					},
+					"bonus": "",
+					"source": "SR4",
+					"page": "66",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Dryad",
+								"bp": "45",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Glamour",
+											"Low-Light Vision"
+										]
+									},
+									"negative": {
+										"quality": [
+											"Distinctive Style",
+											"Symbiosis"
+										]
+									}
+								},
+								"source": "RC",
+								"page": "51"
+							},
+							{
+								"name": "Night One",
+								"bp": "35",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Keen-Eared",
+											"Low-Light Vision"
+										]
+									},
+									"negative": {
+										"quality": [
+											"Sunlight Allergy (Common, Mild)",
+											"Distinctive Style",
+											"Nocturnal",
+											"Unusual Hair"
+										]
+									}
+								},
+								"source": "RC",
+								"page": "52"
+							},
+							{
+								"name": "Wakyambi",
+								"bp": "35",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Celerity",
+											"Elongated Limbs",
+											"Low-Light Vision"
+										]
+									},
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"source": "RC",
+								"page": "52"
+							},
+							{
+								"name": "Xapiri Thëpë",
+								"bp": "40",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Low-Light Vision",
+											"Photometabolism"
+										]
+									},
+									"negative": {
+										"quality": [
+											"Allergy (Uncommon, Mild)",
+											"Allergy (Uncommon, Mild)",
+											"Distinctive Style"
+										]
+									}
+								},
+								"source": "RC",
+								"page": "53"
+							}
+						]
+					}
+				},
+				{
+					"name": "Troll",
+					"category": "Metahuman",
+					"bp": "40",
+					"bodmin": "5",
+					"bodmax": "10",
+					"bodaug": "15",
+					"agimin": "1",
+					"agimax": "5",
+					"agiaug": "7",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "5",
+					"strmax": "10",
+					"straug": "15",
+					"chamin": "1",
+					"chamax": "4",
+					"chaaug": "6",
+					"intmin": "1",
+					"intmax": "5",
+					"intaug": "7",
+					"logmin": "1",
+					"logmax": "5",
+					"logaug": "7",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "2",
+					"inimax": "11",
+					"iniaug": "16",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "15/35, Swim 7",
+					"qualities": {
+						"positive": {
+							"quality": ["Thermographic Vision"]
+						}
+					},
+					"bonus": {
+						"armor": {
+							"b": "1",
+							"i": "1"
+						},
+						"reach": "1"
+					},
+					"source": "SR4",
+					"page": "66",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Cyclops",
+								"bp": "45",
+								"qualities": {
+									"positive": {
+										"quality": [{
+											"_select": "STR",
+											"__text": "Metagenetic Improvement"
+										}]
+									},
+									"negative": {
+										"quality": [
+											"Cyclopean Eye",
+											"Distinctive Style"
+										]
+									}
+								},
+								"bonus": {
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "55"
+							},
+							{
+								"name": "Fomori",
+								"bp": "45",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Arcane Arrester",
+											{
+												"_select": "BOD",
+												"__text": "Metagenetic Improvement"
+											},
+											"Thermographic Vision"
+										]
+									},
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "55"
+							},
+							{
+								"name": "Giant",
+								"bp": "40",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Dermal Alteration (Bark Skin)",
+											"Thermographic Vision"
+										]
+									},
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "56"
+							},
+							{
+								"name": "Minotaur",
+								"bp": "45",
+								"qualities": {
+									"positive": {
+										"quality": [
+											"Goring Horns",
+											{
+												"_select": "BOD",
+												"__text": "Metagenetic Improvement"
+											},
+											"Thermographic Vision"
+										]
+									},
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "57"
+							}
+						]
+					}
+				},
+				{
+					"name": "Centaur",
+					"category": "Sapient Critter",
+					"bp": "30",
+					"bodmin": "2",
+					"bodmax": "7",
+					"bodaug": "10",
+					"agimin": "1",
+					"agimax": "6",
+					"agiaug": "9",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "2",
+					"strmax": "7",
+					"straug": "10",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "5",
+					"intaug": "7",
+					"logmin": "1",
+					"logmax": "5",
+					"logaug": "7",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "2",
+					"inimax": "11",
+					"iniaug": "16",
+					"edgmin": "1",
+					"edgmax": "5",
+					"edgaug": "5",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "20/100",
+					"qualities": {
+						"negative": {
+							"quality": [
+								"Distinctive Style",
+								{
+									"_removable": "true",
+									"__text": "Uncouth"
+								},
+								{
+									"_removable": "true",
+									"__text": "Uneducated"
+								}
+							]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"lifestylecost": "50",
+						"reach": "1"
+					},
+					"powers": {
+						"power": [
+							{
+								"_select": "Low-Light Vision, Thermographic Vision",
+								"__text": "Enhanced Senses"
+							},
+							"Magic Sense",
+							{
+								"_select": "Kick: DV (STR/2)P, AP 0",
+								"__text": "Natural Weapon"
+							},
+							"Sapience"
+						]
+					},
+					"source": "RC",
+					"page": "84"
+				},
+				{
+					"name": "Naga",
+					"category": "Sapient Critter",
+					"bp": "30",
+					"bodmin": "3",
+					"bodmax": "8",
+					"bodaug": "12",
+					"agimin": "1",
+					"agimax": "4",
+					"agiaug": "6",
+					"reamin": "2",
+					"reamax": "7",
+					"reaaug": "10",
+					"strmin": "4",
+					"strmax": "9",
+					"straug": "12",
+					"chamin": "2",
+					"chamax": "7",
+					"chaaug": "10",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "2",
+					"wilmax": "7",
+					"wilaug": "10",
+					"inimin": "4",
+					"inimax": "14",
+					"iniaug": "19",
+					"edgmin": "1",
+					"edgmax": "5",
+					"edgaug": "5",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "5/20, Swim 8/20",
+					"qualities": {
+						"negative": {
+							"quality": [
+								"Distinctive Style",
+								{
+									"_removable": "true",
+									"__text": "Uneducated"
+								}
+							]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"lifestylecost": "50"
+					},
+					"powers": {
+						"power": [
+							{
+								"_rating": "2",
+								"__text": "Armor (Ballistic)"
+							},
+							{
+								"_rating": "3",
+								"__text": "Armor (Impact)"
+							},
+							"Dual Natured",
+							"Guard",
+							{
+								"_select": "Bite: DV (STR/2)P, AP 0",
+								"__text": "Natural Weapon"
+							},
+							"Sapience",
+							"Venom"
+						]
+					},
+					"source": "RC",
+					"page": "84"
+				},
+				{
+					"name": "Pixie",
+					"category": "Sapient Critter",
+					"bp": "35",
+					"bodmin": "1",
+					"bodmax": "3",
+					"bodaug": "5",
+					"agimin": "3",
+					"agimax": "8",
+					"agiaug": "12",
+					"reamin": "3",
+					"reamax": "8",
+					"reaaug": "12",
+					"strmin": "1",
+					"strmax": "3",
+					"straug": "5",
+					"chamin": "3",
+					"chamax": "8",
+					"chaaug": "12",
+					"intmin": "2",
+					"intmax": "7",
+					"intaug": "10",
+					"logmin": "2",
+					"logmax": "7",
+					"logaug": "10",
+					"wilmin": "3",
+					"wilmax": "8",
+					"wilaug": "12",
+					"inimin": "5",
+					"inimax": "15",
+					"iniaug": "22",
+					"edgmin": "1",
+					"edgmax": "7",
+					"edgaug": "7",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "1/4, Fly 20/50",
+					"qualities": {
+						"negative": {
+							"quality": [
+								"Distinctive Style",
+								{
+									"_removable": "true",
+									"__text": "Uneducated"
+								}
+							]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"lifestylecost": "50"
+					},
+					"powers": {
+						"power": [
+							"Concealment",
+							{
+								"_select": "Astral Perception",
+								"__text": "Enhanced Senses"
+							},
+							"Sapience",
+							"Vanish"
+						]
+					},
+					"source": "RC",
+					"page": "84"
+				},
+				{
+					"name": "Sasquatch",
+					"category": "Sapient Critter",
+					"bp": "40",
+					"bodmin": "6",
+					"bodmax": "11",
+					"bodaug": "16",
+					"agimin": "1",
+					"agimax": "6",
+					"agiaug": "9",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "5",
+					"strmax": "10",
+					"straug": "15",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "2",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "5",
+					"edgaug": "5",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "15/35",
+					"qualities": {
+						"negative": {
+							"quality": [
+								"Distinctive Style",
+								{
+									"_removable": "true",
+									"__text": "Uneducated"
+								}
+							]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"lifestylecost": "50",
+						"reach": "1"
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Mimicry",
+							"Sapience"
+						]
+					},
+					"source": "RC",
+					"page": "84"
+				},
+				{
+					"name": "Fox Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "50",
+					"bodmin": "1",
+					"bodmax": "5",
+					"bodaug": "7",
+					"agimin": "2",
+					"agimax": "7",
+					"agiaug": "10",
+					"reamin": "2",
+					"reamax": "7",
+					"reaaug": "10",
+					"strmin": "1",
+					"strmax": "4",
+					"straug": "6",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "2",
+					"intmax": "7",
+					"intaug": "10",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "4",
+					"inimax": "14",
+					"iniaug": "20",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "12/30",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"reach": "-1"
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Hearing, Low Light Vision, Smell, Taste",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "50",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "-1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "65",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "-1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "70",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "-1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "60",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "-1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "80",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "-1"
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Wolf Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "55",
+					"bodmin": "1",
+					"bodmax": "6",
+					"bodaug": "9",
+					"agimin": "1",
+					"agimax": "6",
+					"agiaug": "9",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "1",
+					"strmax": "6",
+					"straug": "9",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "2",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "15/50",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						}
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Hearing, Low Light Vision, Smell, Taste",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "55",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "70",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "75",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "65",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "85",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Eagle Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "60",
+					"bodmin": "1",
+					"bodmax": "6",
+					"bodaug": "9",
+					"agimin": "1",
+					"agimax": "6",
+					"agiaug": "9",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "1",
+					"strmax": "6",
+					"straug": "9",
+					"chamin": "2",
+					"chamax": "7",
+					"chaaug": "10",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "3",
+					"wilmax": "9",
+					"wilaug": "13",
+					"inimin": "2",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "3/6, Fly 18/80",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						}
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Vision Enhancement (2), Vision Magnification",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "55",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "70",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "75",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "65",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "85",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Leopard Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "65",
+					"bodmin": "3",
+					"bodmax": "8",
+					"bodaug": "12",
+					"agimin": "5",
+					"agimax": "8",
+					"agiaug": "12",
+					"reamin": "2",
+					"reamax": "7",
+					"reaaug": "10",
+					"strmin": "2",
+					"strmax": "7",
+					"straug": "10",
+					"chamin": "1",
+					"chamax": "5",
+					"chaaug": "7",
+					"intmin": "1",
+					"intmax": "5",
+					"intaug": "7",
+					"logmin": "1",
+					"logmax": "5",
+					"logaug": "7",
+					"wilmin": "1",
+					"wilmax": "5",
+					"wilaug": "7",
+					"inimin": "3",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "15/80",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						}
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Hearing, Low Light Vision, Smell",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "65",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "80",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "85",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "75",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "95",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Jaguar Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "65",
+					"bodmin": "3",
+					"bodmax": "8",
+					"bodaug": "12",
+					"agimin": "5",
+					"agimax": "8",
+					"agiaug": "12",
+					"reamin": "2",
+					"reamax": "7",
+					"reaaug": "10",
+					"strmin": "2",
+					"strmax": "7",
+					"straug": "10",
+					"chamin": "1",
+					"chamax": "5",
+					"chaaug": "7",
+					"intmin": "1",
+					"intmax": "5",
+					"intaug": "7",
+					"logmin": "1",
+					"logmax": "5",
+					"logaug": "7",
+					"wilmin": "1",
+					"wilmax": "5",
+					"wilaug": "7",
+					"inimin": "3",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "15/80",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						}
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Hearing, Low Light Vision, Smell",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "65",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "80",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "85",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "75",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "95",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Seal Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "70",
+					"bodmin": "4",
+					"bodmax": "9",
+					"bodaug": "13",
+					"agimin": "4",
+					"agimax": "9",
+					"agiaug": "13",
+					"reamin": "1",
+					"reamax": "6",
+					"reaaug": "9",
+					"strmin": "2",
+					"strmax": "7",
+					"straug": "10",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "1",
+					"wilmax": "5",
+					"wilaug": "7",
+					"inimin": "2",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "3/6, Swim 8/20",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						}
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Low Light Vision",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "70",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "85",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "90",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "80",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "100",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									}
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Tiger Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "75",
+					"bodmin": "4",
+					"bodmax": "9",
+					"bodaug": "13",
+					"agimin": "5",
+					"agimax": "8",
+					"agiaug": "12",
+					"reamin": "2",
+					"reamax": "7",
+					"reaaug": "10",
+					"strmin": "3",
+					"strmax": "8",
+					"straug": "12",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "5",
+					"intaug": "7",
+					"logmin": "1",
+					"logmax": "5",
+					"logaug": "7",
+					"wilmin": "1",
+					"wilmax": "5",
+					"wilaug": "7",
+					"inimin": "3",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "15/50",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"reach": "1"
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Hearing, Low Light Vision, Smell",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "75",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "90",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "95",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "85",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "105",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Lion Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "75",
+					"bodmin": "4",
+					"bodmax": "9",
+					"bodaug": "13",
+					"agimin": "5",
+					"agimax": "8",
+					"agiaug": "12",
+					"reamin": "2",
+					"reamax": "7",
+					"reaaug": "10",
+					"strmin": "3",
+					"strmax": "8",
+					"straug": "12",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "5",
+					"intaug": "7",
+					"logmin": "1",
+					"logmax": "5",
+					"logaug": "7",
+					"wilmin": "1",
+					"wilmax": "5",
+					"wilaug": "7",
+					"inimin": "3",
+					"inimax": "12",
+					"iniaug": "18",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "15/50",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"reach": "1"
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Hearing, Low Light Vision, Smell",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "75",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "90",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "95",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "85",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "105",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Bear Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "80",
+					"bodmin": "7",
+					"bodmax": "13",
+					"bodaug": "19",
+					"agimin": "1",
+					"agimax": "4",
+					"agiaug": "6",
+					"reamin": "1",
+					"reamax": "5",
+					"reaaug": "7",
+					"strmin": "7",
+					"strmax": "13",
+					"straug": "19",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "9",
+					"intmin": "1",
+					"intmax": "5",
+					"intaug": "7",
+					"logmin": "1",
+					"logmax": "5",
+					"logaug": "7",
+					"wilmin": "1",
+					"wilmax": "5",
+					"wilaug": "7",
+					"inimin": "2",
+					"inimax": "10",
+					"iniaug": "16",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "15/50",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"reach": "1"
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Smell",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Claws/Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "86",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "80",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "95",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Elf",
+								"bp": "100",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Ork",
+								"bp": "90",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							},
+							{
+								"name": "Troll",
+								"bp": "110",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "1"
+								},
+								"source": "RC",
+								"page": "87"
+							}
+						]
+					}
+				},
+				{
+					"name": "Free Spirit",
+					"category": "Special",
+					"bp": "250",
+					"bodmin": "2",
+					"bodmax": "2",
+					"bodaug": "2",
+					"agimin": "2",
+					"agimax": "2",
+					"agiaug": "2",
+					"reamin": "2",
+					"reamax": "2",
+					"reaaug": "2",
+					"strmin": "2",
+					"strmax": "2",
+					"straug": "2",
+					"chamin": "2",
+					"chamax": "2",
+					"chaaug": "2",
+					"intmin": "2",
+					"intmax": "2",
+					"intaug": "2",
+					"logmin": "2",
+					"logmax": "2",
+					"logaug": "2",
+					"wilmin": "2",
+					"wilmax": "2",
+					"wilaug": "2",
+					"inimin": "2",
+					"inimax": "4",
+					"iniaug": "4",
+					"edgmin": "2",
+					"edgmax": "2",
+					"edgaug": "2",
+					"magmin": "2",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "0",
+					"resmax": "0",
+					"resaug": "0",
+					"essmin": "0",
+					"essmax": "2",
+					"essaug": "2",
+					"movement": "10/25",
+					"qualities": {
+						"positive": {
+							"quality": ["Magician"]
+						},
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "2",
+							"max": "6",
+							"aug": "6",
+							"val": "2"
+						},
+						"basiclifestylecost": "-10",
+						"enabletab": {
+							"name": [
+								"critter",
+								"magician"
+							]
+						},
+						"initiativepass": "1"
+					},
+					"powers": {
+						"power": [
+							"Astral Form",
+							"Banishing Resistance",
+							{
+								"_select": "Normal Weapons",
+								"__text": "Immunity"
+							},
+							"Sapience",
+							"Spirit Pact"
+						]
+					},
+					"optionalpowers": {
+						"power": [
+							{
+								"_cost": "0.5",
+								"__text": "Accident"
+							},
+							{
+								"_cost": "1",
+								"__text": "Animal Control"
+							},
+							{
+								"_cost": "3",
+								"__text": "Aura Masking"
+							},
+							{
+								"_cost": "2",
+								"__text": "Binding"
+							},
+							{
+								"_cost": "2",
+								"__text": "Concealment"
+							},
+							{
+								"_cost": "1",
+								"__text": "Confusion"
+							},
+							{
+								"_cost": "1",
+								"__text": "Divining"
+							},
+							{
+								"_cost": "3",
+								"__text": "Elemental Attack"
+							},
+							{
+								"_cost": "3",
+								"__text": "Energy Aura"
+							},
+							{
+								"_cost": "2",
+								"__text": "Engulf"
+							},
+							{
+								"_cost": "0.25",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_cost": "1.5",
+								"__text": "Fear"
+							},
+							{
+								"_cost": "0.5",
+								"__text": "Guard"
+							},
+							{
+								"_cost": "2",
+								"__text": "Influence"
+							},
+							{
+								"_cost": "0",
+								"__text": "Materialization"
+							},
+							{
+								"_cost": "1",
+								"__text": "Movement"
+							},
+							{
+								"_cost": "1",
+								"__text": "Mutable Form"
+							},
+							{
+								"_cost": "1",
+								"__text": "Natural Weapon"
+							},
+							{
+								"_cost": "1.5",
+								"__text": "Noxious Breath"
+							},
+							{
+								"_cost": "3",
+								"__text": "Personal Domain"
+							},
+							{
+								"_cost": "0",
+								"__text": "Possession"
+							},
+							{
+								"_cost": "0.5",
+								"__text": "Psychokinesis"
+							},
+							{
+								"_cost": "0.5",
+								"__text": "Realistic Form"
+							},
+							{
+								"_cost": "5",
+								"__text": "Regeneration"
+							},
+							{
+								"_cost": "1",
+								"__text": "Shadow Cloak"
+							},
+							{
+								"_cost": "1",
+								"__text": "Silence"
+							},
+							{
+								"_cost": "1",
+								"__text": "Spirit Pact"
+							},
+							{
+								"_cost": "1",
+								"__text": "Venom"
+							},
+							{
+								"_cost": "2",
+								"__text": "Weather Control"
+							}
+						]
+					},
+					"source": "RC",
+					"page": "91"
+				},
+				{
+					"name": "A.I.",
+					"category": "Special",
+					"bp": "110",
+					"bodmin": "0",
+					"bodmax": "0",
+					"bodaug": "0",
+					"agimin": "0",
+					"agimax": "0",
+					"agiaug": "0",
+					"reamin": "0",
+					"reamax": "0",
+					"reaaug": "0",
+					"strmin": "0",
+					"strmax": "0",
+					"straug": "0",
+					"chamin": "1",
+					"chamax": "6",
+					"chaaug": "6",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "6",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "6",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "6",
+					"inimin": "2",
+					"inimax": "12",
+					"iniaug": "12",
+					"edgmin": "1",
+					"edgmax": "1",
+					"edgaug": "1",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "0",
+					"essaug": "0",
+					"movement": "Special",
+					"qualityrestriction": {
+						"positive": {
+							"quality": [
+								"Aptitude",
+								"Authority",
+								"Code Flux",
+								"Codeslinger",
+								"Codivore",
+								"Designer",
+								"Drone Pilot",
+								"Emulate",
+								"Exceptional Attribute",
+								"First Impression",
+								"Guts",
+								"High Pain Tolerance (Rating 1)",
+								"High Pain Tolerance (Rating 2)",
+								"High Pain Tolerance (Rating 3)",
+								"Home Ground",
+								"Improved Realignment",
+								"Intuitive Hacking",
+								"Lucky",
+								"Obscure",
+								"Photographic Memory",
+								"Piloting Origin (Rating 1)",
+								"Piloting Origin (Rating 2)",
+								"Redundancy",
+								"Rootkit",
+								"Sapper",
+								"Snooper",
+								"Spawn"
+							]
+						},
+						"negative": {
+							"quality": [
+								"Addiction (Mild)",
+								"Addiction (Moderate)",
+								"Addiction (Severe)",
+								"Addiction (Burnout)",
+								"Bad Luck",
+								"Codeblock",
+								"Combat Paralysis",
+								"Corruptor",
+								"Data Shadow (Rating 1)",
+								"Data Shadow (Rating 2)",
+								"Data Shadow (Rating 3)",
+								"Fragmentation",
+								"Ghost in the Machine",
+								"Gremlins (Rating 1)",
+								"Gremlins (Rating 2)",
+								"Gremlins (Rating 3)",
+								"Gremlins (Rating 4)",
+								"Incompetent",
+								"Low Pain Tolerance",
+								"Media Junkie (Mild)",
+								"Media Junkie (Moderate)",
+								"Media Junkie (Severe)",
+								"Media Junkie (Burnout)",
+								"Real World Naivete",
+								"SINner (Standard)",
+								"SINner (Criminal)",
+								"Uncouth",
+								"Uneducated"
+							]
+						}
+					},
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"source": "RC",
+					"page": "88"
+				},
+				{
+					"name": "Anaconda Shapeshifter",
+					"category": "Shapeshifter",
+					"bp": "60",
+					"bodmin": "4",
+					"bodmax": "9",
+					"bodaug": "12",
+					"agimin": "1",
+					"agimax": "6",
+					"agiaug": "9",
+					"reamin": "1",
+					"reamax": "5",
+					"reaaug": "7",
+					"strmin": "6",
+					"strmax": "11",
+					"straug": "16",
+					"chamin": "1",
+					"chamax": "5",
+					"chaaug": "7",
+					"intmin": "1",
+					"intmax": "6",
+					"intaug": "9",
+					"logmin": "1",
+					"logmax": "6",
+					"logaug": "9",
+					"wilmin": "1",
+					"wilmax": "6",
+					"wilaug": "9",
+					"inimin": "2",
+					"inimax": "11",
+					"iniaug": "16",
+					"edgmin": "1",
+					"edgmax": "6",
+					"edgaug": "6",
+					"magmin": "1",
+					"magmax": "6",
+					"magaug": "6",
+					"resmin": "1",
+					"resmax": "6",
+					"resaug": "6",
+					"essmin": "0",
+					"essmax": "6",
+					"essaug": "6",
+					"movement": "5/10",
+					"qualities": {
+						"negative": {
+							"quality": ["Distinctive Style"]
+						}
+					},
+					"bonus": {
+						"addattribute": {
+							"name": "MAG",
+							"min": "1",
+							"max": "6",
+							"aug": "6",
+							"val": "1"
+						},
+						"enabletab": {
+							"name": "critter"
+						},
+						"reach": "2"
+					},
+					"powers": {
+						"power": [
+							"Dual Natured",
+							"Regeneration",
+							"Sapience",
+							{
+								"_select": "Thermal",
+								"__text": "Enhanced Senses"
+							},
+							{
+								"_select": "Silver, Severe",
+								"__text": "Allergy"
+							},
+							{
+								"_select": "Silver",
+								"__text": "Vulnerability"
+							},
+							{
+								"_select": "Bite: DV STR/2 + 2, AP 0",
+								"__text": "Natural Weapon"
+							}
+						]
+					},
+					"source": "CI",
+					"page": "102",
+					"metavariants": {
+						"metavariant": [
+							{
+								"name": "Human",
+								"bp": "60",
+								"powers": {
+									"power": "Shift (Human)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "2"
+								},
+								"source": "CI",
+								"page": "102"
+							},
+							{
+								"name": "Dwarf",
+								"bp": "75",
+								"powers": {
+									"power": "Shift (Dwarf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "2"
+								},
+								"source": "CI",
+								"page": "102"
+							},
+							{
+								"name": "Elf",
+								"bp": "80",
+								"powers": {
+									"power": "Shift (Elf)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "2"
+								},
+								"source": "CI",
+								"page": "102"
+							},
+							{
+								"name": "Ork",
+								"bp": "70",
+								"powers": {
+									"power": "Shift (Ork)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "-1"
+								},
+								"source": "CI",
+								"page": "102"
+							},
+							{
+								"name": "Troll",
+								"bp": "90",
+								"powers": {
+									"power": "Shift (Troll)"
+								},
+								"qualities": {
+									"negative": {
+										"quality": ["Distinctive Style"]
+									}
+								},
+								"bonus": {
+									"addattribute": {
+										"name": "MAG",
+										"min": "1",
+										"max": "6",
+										"aug": "6",
+										"val": "1"
+									},
+									"enabletab": {
+										"name": "critter"
+									},
+									"reach": "2"
+								},
+								"source": "CI",
+								"page": "102"
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}
