@@ -38,7 +38,6 @@
             <div class="card-body">
               <div class="list-group list-group-flush">
                 <a href="https://www.shadowruntabletop.com/wp-content/uploads/Downloads/Shadowrun%20Quick-Start%20Rules.pdf" class="list-group-item list-group-item-action">Quick Start Guide</a>
-                <a href="https://ptserv.ddns.net/fileServ/files/electracion/shadowrun-fourth-edition-core-book_compress.pdf" class="list-group-item list-group-item-action">Core Book</a>
                 <a href="https://ptserv.ddns.net/fileServ/files/electracion/Shadowrun-4th-ed-Character-Sheet-fillable.pdf" class="list-group-item list-group-item-action">Character Sheet</a>
                 <a href="./roll.php" class="list-group-item list-group-item-action">Dice Roller</a>
                 <a href="https://github.com/chummer5a/chummer/releases/download/0.490/Chummer.zip" class="list-group-item list-group-item-action">Character Generator Program (Chummer)</a>

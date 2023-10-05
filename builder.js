@@ -9,7 +9,7 @@ window.loaded = function () {
   add_event_listener("lst_meta_category", "change", updateMetaTypes);
   add_event_listener("lst_meta_type", "change", updateMetatypeStats);
   add_event_listener("lst_metavariant", "change", updateMetavariantStats);
-  add_event_listener("btn_save_metatype_selection", createCharacter);
+  add_event_listener("btn_save_metatype_selection", "click", createCharacter);
 }
 
 function ajax(url, func) {
@@ -203,15 +203,13 @@ function getMetaTypeSelection() {
 }
 
 function createCharacter() {
-  console.log('test');
-
-  const metatype_bp = document.getElementById('txt_metatype_bp_cost'),
-    variant_bp = document.getElementById('txt_metavariant_bp'),
+  const metatype_bp = parseInt(document.getElementById('txt_metatype_bp_cost').value, 10),
+    variant_bp = parseInt(document.getElementById('txt_metavariant_bp').value, 10),
     metatype = document.getElementById('lst_meta_type').value,
     metavariant = document.getElementById('lst_metavariant').value;
 
-  if (variant_bp.value > 0) {
-    character.metatype_cost = variant_bp.value;
+  if (variant_bp > 0) {
+    character.metatype_cost = variant_bp;
   }
   else {
     character.metatype_cost = metatype_bp;
@@ -223,38 +221,41 @@ function createCharacter() {
   character.metatype = metatype;
   character.metavariant = metavariant;
 
-  character.attr_bod_min = meta_obj.bodmin;
-  character.attr_agi_min = meta_obj.agimin;
-  character.attr_rea_min = meta_obj.reamin;
-  character.attr_str_min = meta_obj.strmin;
-  character.attr_int_min = meta_obj.intmin;
-  character.attr_log_min = meta_obj.logmin;
-  character.attr_cha_min = meta_obj.chamin;
-  character.attr_wil_min = meta_obj.wilmin;
-  character.attr_ini_min = meta_obj.inimin;
-  character.attr_bod_max = meta_obj.bodmax; 
-  character.attr_agi_max = meta_obj.agimax; 
-  character.attr_rea_max = meta_obj.reamax; 
-  character.attr_str_max = meta_obj.strmax; 
-  character.attr_int_max = meta_obj.intmax; 
-  character.attr_log_max = meta_obj.logmax; 
-  character.attr_cha_max = meta_obj.chamax; 
-  character.attr_wil_max = meta_obj.wilmax; 
-  character.attr_ini_max = meta_obj.inimax; 
-  character.attr_bod_aug = meta_obj.bodaug;
-  character.attr_agi_aug = meta_obj.agiaug;
-  character.attr_rea_aug = meta_obj.reaaug;
-  character.attr_str_aug = meta_obj.straug;
-  character.attr_int_aug = meta_obj.intaug;
-  character.attr_log_aug = meta_obj.logaug;
-  character.attr_cha_aug = meta_obj.chaaug;
-  character.attr_wil_aug = meta_obj.wilaug;
-  character.attr_ini_aug = meta_obj.iniaug;
+  character.attr_min_bod = meta_obj.bodmin;
+  character.attr_min_agi = meta_obj.agimin;
+  character.attr_min_rea = meta_obj.reamin;
+  character.attr_min_str = meta_obj.strmin;
+  character.attr_min_int = meta_obj.intmin;
+  character.attr_min_log = meta_obj.logmin;
+  character.attr_min_cha = meta_obj.chamin;
+  character.attr_min_wil = meta_obj.wilmin;
+  character.attr_min_ini = meta_obj.inimin;
+  character.attr_max_bod = meta_obj.bodmax; 
+  character.attr_max_agi = meta_obj.agimax; 
+  character.attr_max_rea = meta_obj.reamax; 
+  character.attr_max_str = meta_obj.strmax; 
+  character.attr_max_int = meta_obj.intmax; 
+  character.attr_max_log = meta_obj.logmax; 
+  character.attr_max_cha = meta_obj.chamax; 
+  character.attr_max_wil = meta_obj.wilmax; 
+  character.attr_max_ini = meta_obj.inimax; 
+  character.attr_aug_bod = meta_obj.bodaug;
+  character.attr_aug_agi = meta_obj.agiaug;
+  character.attr_aug_rea = meta_obj.reaaug;
+  character.attr_aug_str = meta_obj.straug;
+  character.attr_aug_int = meta_obj.intaug;
+  character.attr_aug_log = meta_obj.logaug;
+  character.attr_aug_cha = meta_obj.chaaug;
+  character.attr_aug_wil = meta_obj.wilaug;
+  character.attr_aug_ini = meta_obj.iniaug;
 
   if (metavariant != -1) {
-    this.qualities.positive = metavariant_obj.qualities.positive.quality;
-    this.qualities.negative = metavariant_obj.qualities.negative.quality;
+    character.qualities.positive = metavariant_obj.qualities.positive.quality;
+    character.qualities.negative = metavariant_obj.qualities.negative.quality;
   }
 
-  console.log(character);
+  hideModal('metatype_select_dialogue');
+  document.getElementById('tab_row').classList.remove('d-none');
+  document.getElementById('tab_body').classList.remove('d-none');
+  document.getElementById('new_char_row').classList.add('d-none');
 }

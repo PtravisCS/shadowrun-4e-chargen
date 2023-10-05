@@ -13,61 +13,29 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +264 /media/main/www/html/shadowRun/builder.php
-badd +254 builder.js
+badd +47 /media/main/www/html/shadowRun/builder.php
+badd +1 builder.js
 badd +2 character.js
 badd +435 data/metatypes.json
 argglobal
 %argdel
-edit builder.js
+edit /media/main/www/html/shadowRun/builder.php
 argglobal
-balt /media/main/www/html/shadowRun/builder.php
+balt builder.js
 setlocal fdm=expr
 setlocal fde=nvim_treesitter#foldexpr()
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=3
+setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-15
-normal! zo
-51
-normal! zo
-61
-normal! zo
-78
-normal! zo
-86
-normal! zo
-96
-normal! zo
-105
-normal! zo
-109
-normal! zo
-110
-normal! zo
-115
-normal! zo
-116
-normal! zo
-129
-normal! zo
-167
-normal! zo
-182
-normal! zo
-187
-normal! zo
-205
-normal! zo
-let s:l = 185 - ((0 * winheight(0) + 23) / 46)
+let s:l = 221 - ((22 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 185
-normal! 03|
+keepjumps 221
+normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
