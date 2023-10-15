@@ -3,13 +3,13 @@ let character = new Character();
 
 window.loaded = function () {
   window.modals = {};
-  add_event_listener("btn_new_character", "click", getSettings);
-  add_event_listener("btn_save_settings_selection", "click", getPointSelection);
-  add_event_listener("btn_save_point_selection", "click", getMetaTypeSelection);
-  add_event_listener("lst_meta_category", "change", updateMetaTypes);
-  add_event_listener("lst_meta_type", "change", updateMetatypeStats);
-  add_event_listener("lst_metavariant", "change", updateMetavariantStats);
-  add_event_listener("btn_save_metatype_selection", "click", createCharacter);
+  add_event_listener("charEditorMenu_btnNewCharacter", "click", getSettings);
+  add_event_listener("mdlSettingsSelect_btnSaveSettings", "click", getPointSelection);
+  add_event_listener("mdlPointsSelect_btnSavePoints", "click", getMetatypeSelection);
+  add_event_listener("mdlMetatypeSelect_lstMetaCategory", "change", updateMetatypes);
+  add_event_listener("mdlMetatypeSelect_lstMetatype", "change", updateMetatypeStats);
+  add_event_listener("mdlMetatypeSelect_lstMetavariant", "change", updateMetavariantStats);
+  add_event_listener("mdlMetatypeSelect_btnSaveMetatype", "click", createCharacter);
 }
 
 function ajax(url, func) {
@@ -50,7 +50,7 @@ function hideModal(elem_id) {
 
 function getSettings() {
   const settings_files_string = document.getElementById('settings_files').value,
-    lst_settings = document.getElementById('lst_settings');
+    lst_settings = document.getElementById('mdlSettingsSelect_lstSettings');
 
   const settings_files = settings_files_string.split(', ');
 
@@ -67,17 +67,17 @@ function getSettings() {
     }
   }
 
-  showModal('settings_select_dialogue', {});
+  showModal('mdlSettingsSelect', {});
 }
 
 function getPointSelection() {
-  hideModal('settings_select_dialogue');
-  showModal('points_select_dialogue');
+  hideModal('mdlSettingsSelect');
+  showModal('mdlPointsSelect');
 }
 
-function updateMetaTypes() {
-  const lst_meta_category = document.getElementById('lst_meta_category'),
-    lst_meta_type = document.getElementById('lst_meta_type');
+function updateMetatypes() {
+  const lst_meta_category = document.getElementById('mdlMetatypeSelect_lstMetaCategory'),
+    lst_meta_type = document.getElementById('mdlMetatypeSelect_lstMetatype');
 
   while (lst_meta_type.options.length > 0) {
     lst_meta_type.remove(0);
@@ -94,10 +94,10 @@ function updateMetaTypes() {
 }
 
 function updateMetavariantStats() {
-  const variant_bp = document.getElementById('txt_metavariant_bp'),
-    qualities = document.getElementById('txt_metavariant_qualities'),
-    metatype = document.getElementById('lst_meta_type').value,
-    metavariant = document.getElementById('lst_metavariant').value;
+  const variant_bp = document.getElementById('mdlMetatypeSelect_txtMetavariantBP'),
+    qualities = document.getElementById('mdlMetatypeSelect_txtMetavariantQualities'),
+    metatype = document.getElementById('mdlMetatypeSelect_lstMetatype').value,
+    metavariant = document.getElementById('mdlMetatypeSelect_lstMetavariant').value;
 
   const meta_obj = chummer.metatypes.metatype.find((obj) => obj.name === metatype);
   const metavariant_obj = meta_obj.metavariants.metavariant.find((variant) => variant.name === metavariant);
@@ -127,20 +127,20 @@ function updateMetavariantStats() {
 }
 
 function updateMetatypeStats() {
-  const bp_cost = document.getElementById('txt_metatype_bp_cost'),
-    txt_bod = document.getElementById('txt_metatype_bod'),
-    txt_agi = document.getElementById('txt_metatype_agi'),
-    txt_rea = document.getElementById('txt_metatype_rea'),
-    txt_str = document.getElementById('txt_metatype_str'),
-    txt_int = document.getElementById('txt_metatype_int'),
-    txt_log = document.getElementById('txt_metatype_log'),
-    txt_wil = document.getElementById('txt_metatype_wil'),
-    txt_ini = document.getElementById('txt_metatype_ini'),
-    txt_cha = document.getElementById('txt_metatype_cha'),
-    lst_metavariant = document.getElementById('lst_metavariant'),
-    variant_bp = document.getElementById('txt_metavariant_bp'),
-    qualities = document.getElementById('txt_metavariant_qualities'),
-    metatype = document.getElementById('lst_meta_type').value;
+  const bp_cost = document.getElementById('mdlMetatypeSelect_txtMetatypeBPCost'),
+    txt_bod = document.getElementById('mdlMetatypeSelect_txtMetatypeBod'),
+    txt_agi = document.getElementById('mdlMetatypeSelect_txtMetatypeAgi'),
+    txt_rea = document.getElementById('mdlMetatypeSelect_txtMetatypeRea'),
+    txt_str = document.getElementById('mdlMetatypeSelect_txtMetatypeStr'),
+    txt_int = document.getElementById('mdlMetatypeSelect_txtMetatypeInt'),
+    txt_log = document.getElementById('mdlMetatypeSelect_txtMetatypeLog'),
+    txt_wil = document.getElementById('mdlMetatypeSelect_txtMetatypeWil'),
+    txt_ini = document.getElementById('mdlMetatypeSelect_txtMetatypeIni'),
+    txt_cha = document.getElementById('mdlMetatypeSelect_txtMetatypeCha'),
+    lst_metavariant = document.getElementById('mdlMetatypeSelect_lstMetavariant'),
+    variant_bp = document.getElementById('mdlMetatypeSelect_txtMetavariantBP'),
+    qualities = document.getElementById('mdlMetatypeSelect_txtMetavariantQualities'),
+    metatype = document.getElementById('mdlMetatypeSelect_lstMetatype').value;
 
   const meta_obj = chummer.metatypes.metatype.find((obj) => obj.name === metatype); 
 
@@ -179,15 +179,15 @@ function updateMetatypeStats() {
   }
 }
 
-function getMetaTypeSelection() {
-  hideModal('points_select_dialogue');
+function getMetatypeSelection() {
+  hideModal('mdlPointsSelect');
 
   const url = 'https://ptserv.ddns.net/shadowRun/data/metatypes.json';
 
   ajax(url, (data) => {
     chummer = data.chummer;
 
-    const lst_meta_category = document.getElementById('lst_meta_category');
+    const lst_meta_category = document.getElementById('mdlMetatypeSelect_lstMetaCategory');
 
     for (const category of chummer.categories.category) {
       let opt = document.createElement('option');
@@ -196,17 +196,17 @@ function getMetaTypeSelection() {
       lst_meta_category.appendChild(opt); 
     }
 
-    updateMetaTypes();
+    updateMetatypes();
 
-    showModal('metatype_select_dialogue');
+    showModal('mdlMetatypeSelect');
   });
 }
 
 function createCharacter() {
-  const metatype_bp = parseInt(document.getElementById('txt_metatype_bp_cost').value, 10),
-    variant_bp = parseInt(document.getElementById('txt_metavariant_bp').value, 10),
-    metatype = document.getElementById('lst_meta_type').value,
-    metavariant = document.getElementById('lst_metavariant').value;
+  const metatype_bp = parseInt(document.getElementById('mdlMetatypeSelect_txtMetatypeBPCost').value, 10),
+    variant_bp = parseInt(document.getElementById('mdlMetatypeSelect_txtMetavariantBP').value, 10),
+    metatype = document.getElementById('mdlMetatypeSelect_lstMetatype').value,
+    metavariant = document.getElementById('mdlMetatypeSelect_lstMetavariant').value;
 
   if (variant_bp > 0) {
     character.metatype_cost = variant_bp;
@@ -254,8 +254,8 @@ function createCharacter() {
     character.qualities.negative = metavariant_obj.qualities.negative.quality;
   }
 
-  hideModal('metatype_select_dialogue');
-  document.getElementById('tab_row').classList.remove('d-none');
-  document.getElementById('tab_body').classList.remove('d-none');
-  document.getElementById('new_char_row').classList.add('d-none');
+  hideModal('mdlMetatypeSelect');
+  document.getElementById('charEditor').classList.remove('d-none');
+  document.getElementById('sidebar').classList.remove('d-none');
+  document.getElementById('charEditorMenu').classList.add('d-none');
 }

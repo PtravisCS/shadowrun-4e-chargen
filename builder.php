@@ -34,203 +34,234 @@
         </div>
         <div class="card-body" id="character_builder">
 
-          <div class="row" id="new_char_row">
+          <div class="row" id="charEditorMenu">
             <div class="col">
-              <button type="button" id="btn_new_character" class="btn btn-primary" aria-label="New Character"><b>+</b> New Character</button>
+              <button type="button" id="charEditorMenu_btnNewCharacter" class="btn btn-primary" aria-label="New Character"><b>+</b> New Character</button>
             </div>
           </div> 
 
-          <div class="row d-none" id="tab_row">
-            <div class="col-md-12">
-              <ul class="nav nav-tabs" id="tab_list" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="common_tab" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="home" aria-selected="true">Common</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="skills_tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Skills</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="martial_arts_tab" data-bs-toggle="tab" data-bs-target="#martial_arts" type="button" role="tab" aria-controls="martial_arts" aria-selected="false">Martial Arts</button>
-                </li>
-              </ul> 
-            </div>
-          </div>
-          <div class="tab-content d-none" id="tab_body">
+          <div class="row d-none" id="charEditor">
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="common_tab" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="home" aria-selected="true">Common</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="skills_tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Skills</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="martial_arts_tab" data-bs-toggle="tab" data-bs-target="#martial_arts" type="button" role="tab" aria-controls="martial_arts" aria-selected="false">Martial Arts</button>
+                    </li>
+                  </ul> 
+                </div>
+              </div>
+              <div class="tab-content" id="tab_body">
 
-            <div class="tab-pane show active" id="common" role="tabpanel" aria-labelledby="common_tab">
-              <div class="row mt-3">
+                <div class="tab-pane show active" id="common" role="tabpanel" aria-labelledby="common_tab">
+                  <div class="row mt-3">
 
-                <div class="col-md-2">
-                  <div class="row mb-2">
-                    <div class="col-md-12">
-                      <button class="btn btn-secondary rounded-0" id="btn_add_quality">Add Quality</button>
-                      <button class="btn btn-secondary rounded-0" id="btn_remove_quality">Delete</button>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="input-group">
-                        <select class="form-select" aria-label="list of character qualities" id="lst_character_qualities" size="38">
-                        </select>
+                    <div class="col-md-2">
+                      <div class="row mb-2">
+                        <div class="col-md-12">
+                          <button class="btn btn-secondary rounded-0" id="btn_add_quality">Add Quality</button>
+                          <button class="btn btn-secondary rounded-0" id="btn_remove_quality">Delete</button>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <select class="form-select" aria-label="list of character qualities" id="lst_character_qualities" size="38">
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <span class="input-group-text">Cost</span>
+                            <span class="input-group-text" id="lbl_quality_bp">0 BP</span>
+                            <span class="input-group-text">Source</span>
+                            <span class="input-group-text" id="lbl_quality_source"></span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-text">Cost</span>
-                        <span class="input-group-text" id="lbl_quality_bp">0 BP</span>
-                        <span class="input-group-text">Source</span>
-                        <span class="input-group-text" id="lbl_quality_source"></span>
+
+                    <div class="col-md-10">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <span class="input-group-text">Alias</span>
+                            <input type="text" class="form-control" id="txt_char_alias" aria-label="Alias" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <span class="input-group-text">Metatype</span>
+                            <span class="input-group-text" id="lbl_metatype"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-md-2">Attributes</div>
+                        <div class="col-md-2">Base</div>
+                        <div class="col-md-2">Aug</div>
+                        <div class="col-md-2">Metatype Limits</div>
+                        <div class="col-md-2" id="lbl_attr_src" >Source: </div>
+                        <hr />
+                      </div>
+                      <div class="row">
+                        <div class="col-md-2">Body (BOD)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_bod" aria-label="BOD" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_bod_aug" aria-label="BOD aug" /></div>
+                        <div class="col-md-2" id="lbl_char_bod_limits"></div>
+                        <div class="col-md-3" >
+                          <div class="input-group">
+                            <span class="input-group-text">Nuyen</span>
+                            <input type="text" class="form-control" id="txt_char_nuyen" aria-label="New Yen Amount" />
+                            <span class="input-group-text" id="lbl_char_real_nuyen"> = 0¥</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Agility (AGI)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_agi" aria-label="AGI" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_agi_aug" aria-label="AGI aug" /></div>
+                        <div class="col-md-2" id="lbl_char_agi_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Reaction (REA)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_rea" aria-label="REA" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_rea_aug" aria-label="REA aug" /></div>
+                        <div class="col-md-2" id="lbl_char_rea_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Strength (STR)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_str" aria-label="STR" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_str_aug" aria-label="STR aug" /></div>
+                        <div class="col-md-2" id="lbl_char_str_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Charisma (CHA)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_cha" aria-label="cha" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_cha_aug" aria-label="cha aug" /></div>
+                        <div class="col-md-2" id="lbl_char_cha_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Intuition (INT)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_int" aria-label="int" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_int_aug" aria-label="int aug" /></div>
+                        <div class="col-md-2" id="lbl_char_int_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Logic (LOG)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_log" aria-label="log" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_log_aug" aria-label="log aug" /></div>
+                        <div class="col-md-2" id="lbl_char_log_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Willpower (WIL)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_wil" aria-label="will" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_wil_aug" aria-label="will aug" /></div>
+                        <div class="col-md-2" id="lbl_char_wil_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Edge (EDG)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_edg" aria-label="edg" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_edg_aug" aria-label="edg aug" /></div>
+                        <div class="col-md-2" id="lbl_char_edg_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Magic (MAG)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_mag" aria-label="mag" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_mag_aug" aria-label="mag aug" /></div>
+                        <div class="col-md-2" id="lbl_char_mag_limits"></div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-2">Resonance (RES)</div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_res" aria-label="res" disabled /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_res_aug" aria-label="res aug" disabled /></div>
+                        <div class="col-md-2" id="lbl_char_res_limits"></div>
+                      </div>
+
+                      <!--Contacts -->
+                      <div class="row mt-3">
+                        <div class="col">
+                          <h5>Contacts</h5>
+                          <hr />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button class="btn btn-secondary rounded-0" id="btn_add_contact">Add Contact</button>
+                        </div> 
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12" id="contact_rows">
+                        </div>
+                      </div>
+                      
+                      <!-- Enemies -->
+                      <div class="row mt-5">
+                        <div class="col">
+                          <h5>Enemies</h5>
+                          <hr />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button class="btn btn-secondary rounded-0" id="btn_add_enemy">Add Enemy</button>
+                        </div>
+                      </div>
+                      <div clas="row">
+                        <div class="col-md-12" id="enemy_rows">
+                        </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <span class="input-group-text">Alias</span>
-                        <input type="text" class="form-control" id="txt_char_alias" aria-label="Alias" />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <span class="input-group-text">Metatype</span>
-                        <span class="input-group-text" id="lbl_metatype"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-md-2">Attributes</div>
-                    <div class="col-md-2">Base</div>
-                    <div class="col-md-2">Aug</div>
-                    <div class="col-md-2">Metatype Limits</div>
-                    <div class="col-md-2" id="lbl_attr_src" >Source: </div>
-                    <hr />
-                  </div>
-                  <div class="row">
-                    <div class="col-md-2">Body (BOD)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_bod" aria-label="BOD" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_bod_aug" aria-label="BOD aug" /></div>
-                    <div class="col-md-2" id="lbl_char_bod_limits"></div>
-                    <div class="col-md-3" >
-                      <div class="input-group">
-                        <span class="input-group-text">Nuyen</span>
-                        <input type="text" class="form-control" id="txt_char_nuyen" aria-label="New Yen Amount" />
-                        <span class="input-group-text" id="lbl_char_real_nuyen"> = 0¥</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Agility (AGI)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_agi" aria-label="AGI" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_agi_aug" aria-label="AGI aug" /></div>
-                    <div class="col-md-2" id="lbl_char_agi_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Reaction (REA)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_rea" aria-label="REA" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_rea_aug" aria-label="REA aug" /></div>
-                    <div class="col-md-2" id="lbl_char_rea_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Strength (STR)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_str" aria-label="STR" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_str_aug" aria-label="STR aug" /></div>
-                    <div class="col-md-2" id="lbl_char_str_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Charisma (CHA)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_cha" aria-label="cha" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_cha_aug" aria-label="cha aug" /></div>
-                    <div class="col-md-2" id="lbl_char_cha_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Intuition (INT)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_int" aria-label="int" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_int_aug" aria-label="int aug" /></div>
-                    <div class="col-md-2" id="lbl_char_int_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Logic (LOG)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_log" aria-label="log" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_log_aug" aria-label="log aug" /></div>
-                    <div class="col-md-2" id="lbl_char_log_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Willpower (WIL)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_wil" aria-label="will" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_wil_aug" aria-label="will aug" /></div>
-                    <div class="col-md-2" id="lbl_char_wil_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Edge (EDG)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_edg" aria-label="edg" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_edg_aug" aria-label="edg aug" /></div>
-                    <div class="col-md-2" id="lbl_char_edg_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Magic (MAG)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_mag" aria-label="mag" /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_mag_aug" aria-label="mag aug" /></div>
-                    <div class="col-md-2" id="lbl_char_mag_limits"></div>
-                  </div>
-                  <div class="row mt-1">
-                    <div class="col-md-2">Resonance (RES)</div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_res" aria-label="res" disabled /></div>
-                    <div class="col-md-2"><input type="text" class="form-control" id="txt_char_res_aug" aria-label="res aug" disabled /></div>
-                    <div class="col-md-2" id="lbl_char_res_limits"></div>
-                  </div>
+                <div class="tab-pane" id="skills" role="tabpanel" aria-labelledby="skills_tab">
 
-                  <!--Contacts -->
-                  <div class="row mt-3">
-                    <div class="col">
-                      <h5>Contacts</h5>
-                      <hr />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <button class="btn btn-secondary rounded-0" id="btn_add_contact">Add Contact</button>
-                    </div> 
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12" id="contact_rows">
-                    </div>
-                  </div>
-                  
-                  <!-- Enemies -->
-                  <div class="row mt-5">
-                    <div class="col">
-                      <h5>Enemies</h5>
-                      <hr />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <button class="btn btn-secondary rounded-0" id="btn_add_enemy">Add Enemy</button>
-                    </div>
-                  </div>
-                  <div clas="row">
-                    <div class="col-md-12" id="enemy_rows">
-                    </div>
-                  </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="tab-pane" id="martial_arts" role="tabpanel" aria-labelledby="martial_arts_tab">
 
                 </div>
               </div>
-            </div>
+            </div> 
 
-            <div class="tab-pane" id="skills" role="tabpanel" aria-labelledby="skills_tab">
+            <div class="col-md-2 d-none" id="sidebar">
+              <div class="card">
+                <div class="card-body">
+                  <ul class="nav nav-tabs" id="sidebar_tab_list" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="bpSummary_tab" data-bs-toggle="tab" data-bs-target="#bpSummary" type="button" role="tab" aria-controls="bpSummary" aria-selected="true">BP Summary</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="otherInfo_tab" data-bs-toggle="tab" data-bs-target="#otherInfo" type="button" role="tab" aria-controls="otherInfo" aria-selected="false">Other Info</button>
+                    </li>
+                  </ul> 
 
-            </div>
+                  <div class="tab-content mt-2" id="sidebar_tab_body">
 
-            <div class="tab-pane" id="martial_arts" role="tabpanel" aria-labelledby="martial_arts_tab">
+                    <div class="tab-pane show active" id="bpSummary" role="tabpanel" aria-labelledby="bpSummary">
+                      <div class="row">
+                        <div class="col-md-8" id="bpSummary_>
+                        </div>
+                      </div>
+                    </div>
 
+                    <div class="tab-pane" id="otherInfo" role="tabpanel" aria-labelledby="otherInfo">
+                      Bye
+                    </div>
+
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -238,7 +269,7 @@
       </div>
     </div>
 
-    <div class="modal" id="settings_select_dialogue" tabindex="-1" aria-hidden="true">
+    <div class="modal" id="mdlSettingsSelect" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -256,7 +287,7 @@
                 <div class="col">
                   <div class="input-group mb-3">
                     <span class="input-group-text">Settings File</span>
-                    <select id="lst_settings" class="form-select" aria-label="Rules Sets to Choose From">
+                    <select id="mdlSettingsSelect_lstSettings" class="form-select" aria-label="Rules Sets to Choose From">
                     </select>
                   </div>
                 </div>
@@ -264,13 +295,13 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="btn_save_settings_selection">Next</button> 
+            <button type="button" class="btn btn-primary" id="mdlSettingsSelect_btnSaveSettings">Next</button> 
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal" id="points_select_dialogue" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal" id="mdlPointsSelect" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -287,17 +318,17 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="input-group">
-                    <select id="lst_point_type" class="form-select" aria-label="Point Type BP or Karma">
+                    <select id="mdlPointsSelect_lstPointType" class="form-select" aria-label="Point Type BP or Karma">
                       <option value="bp" selected >BP</option>
                       <option value="karma">Karma</option>
                     </select>
-                    <input type="text" class="form-control" id="points" aria-label="Points" value="400" />
+                    <input type="text" class="form-control" id="mdlPointsSelect_txtPoints" aria-label="Points" value="400" />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="input-group mb-3">
-                    <span class="input-group-text" id="lbl_max_avail">Max Avail.</span>
-                    <input type="text" class="form-control" id="txt_max_avail" value="12" aria-label="Max Available" aria-describedby="lbl_max_avail" />
+                    <span class="input-group-text" id="mdlPointsSelect_lblMaxAvail">Max Avail.</span>
+                    <input type="text" class="form-control" id="mdlPointsSelect_txtMaxAvail" value="12" aria-label="Max Available" aria-describedby="mdlPointsSelect_lbl_maxAvail" />
                   </div> 
                 </div>
               </div>
@@ -305,20 +336,20 @@
                 <div class="col">
                   <div class="input-group mb-3">
                     <span class="input-group-text">Ignore Character Creation Rules</span>
-                    <div class="input-group-text" id="lbl_ignore_rules"><input type="checkbox" class="form-check-input mt-0" id="chk_ignore_rules" /></div>
+                    <div class="input-group-text"><input type="checkbox" class="form-check-input mt-0" id="mdlPointsSelect_chkIgnoreRules" /></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="btn_save_point_selection">Next</button> 
+            <button type="button" class="btn btn-primary" id="mdlPointsSelect_btnSavePoints">Next</button> 
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal" id="metatype_select_dialogue" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal" id="mdlMetatypeSelect" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -333,7 +364,7 @@
                     <div class="col-md-12">
                       <div class="input-group">
                         <span class="input-group-text rounded-0">Category</span>
-                        <select id="lst_meta_category" class="form-select" aria-label="Meta-Categories to Choose From">
+                        <select id="mdlMetatypeSelect_lstMetaCategory" class="form-select" aria-label="Meta-Categories to Choose From">
                         </select>
                       </div>
                     </div>
@@ -341,7 +372,7 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="input-group mb-3">
-                        <select id="lst_meta_type" class="form-select" aria-label="Meta-Types to Choose From" size="13">
+                        <select id="mdlMetatypeSelect_lstMetatype" class="form-select" aria-label="Meta-Types to Choose From" size="13">
                         </select>
                       </div>
                     </div>
@@ -352,7 +383,7 @@
                     <div class="col-md-6">
                       <div class="input-group">
                         <span class="input-group-text">BP</span>
-                        <input type="text" class="form-control" id="txt_metatype_bp_cost" aria-label="Metatype BP Cost" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeBPCost" aria-label="Metatype BP Cost" />
                       </div>
                     </div>
                   </div>
@@ -360,19 +391,19 @@
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">BOD</span>
-                        <input type="text" class="form-control" id="txt_metatype_bod" aria-label="Metatype BOD" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeBod" aria-label="Metatype BOD" />
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">AGI</span>
-                        <input type="text" class="form-control" id="txt_metatype_agi" aria-label="Metatype AGI" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeAgi" aria-label="Metatype AGI" />
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">REA</span>
-                        <input type="text" class="form-control" id="txt_metatype_rea" aria-label="Metatype REA" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeRea" aria-label="Metatype REA" />
                       </div>
                     </div>
                   </div>
@@ -380,19 +411,19 @@
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">STR</span>
-                        <input type="text" class="form-control" id="txt_metatype_str" aria-label="Metatype STR" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeStr" aria-label="Metatype STR" />
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">INT</span>
-                        <input type="text" class="form-control" id="txt_metatype_int" aria-label="Metatype INT" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeInt" aria-label="Metatype INT" />
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">LOG</span>
-                        <input type="text" class="form-control" id="txt_metatype_log" aria-label="Metatype LOG" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeLog" aria-label="Metatype LOG" />
                       </div>
                     </div>
                   </div>
@@ -400,19 +431,19 @@
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">CHA</span>
-                        <input type="text" class="form-control" id="txt_metatype_cha" aria-label="Metatype CHA" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeCha" aria-label="Metatype CHA" />
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">WIL</span>
-                        <input type="text" class="form-control" id="txt_metatype_wil" aria-label="Metatype WIL" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeWil" aria-label="Metatype WIL" />
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="input-group">
                         <span class="input-group-text">INI</span>
-                        <input type="text" class="form-control" id="txt_metatype_ini" aria-label="Metatype INI" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetatypeIni" aria-label="Metatype INI" />
                       </div>
                     </div>
                   </div>
@@ -420,7 +451,7 @@
                     <div class="col">
                       <div class="input-group">
                         <span class="input-group-text">Metavariant</span>
-                        <select id="lst_metavariant" class="form-select" aria-label="Metavariants to Choose From">
+                        <select id="mdlMetatypeSelect_lstMetavariant" class="form-select" aria-label="Metavariants to Choose From">
                         </select>
                       </div>
                     </div>
@@ -429,13 +460,13 @@
                     <div class="col-md-3">
                       <div class="input-group">
                         <span class="input-group-text">BP</span>
-                        <input type="text" class="form-control" id="txt_metavariant_bp" aria-label="Metavariant BP Cost" />
+                        <input type="text" class="form-control" id="mdlMetatypeSelect_txtMetavariantBP" aria-label="Metavariant BP Cost" />
                       </div>
                     </div>
                     <div class="col-md-9">
                       <div class="input-group">
                         <span class="input-group-text">Variant Qualities</span>
-                        <textarea class="form-control" id="txt_metavariant_qualities" aria-label="Metavariant Qualities" rows="4"></textarea>
+                        <textarea class="form-control" id="mdlMetatypeSelect_txtMetavariantQualities" aria-label="Metavariant Qualities" rows="4"></textarea>
                       </div>
                     </div>
                   </div>
@@ -444,7 +475,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="btn_save_metatype_selection">Next</button> 
+            <button type="button" class="btn btn-primary" id="mdlMetatypeSelect_btnSaveMetatype">Next</button> 
           </div>
         </div>
       </div>
