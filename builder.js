@@ -3,6 +3,9 @@ let character = new Character();
 
 window.loaded = function () {
   window.modals = {};
+
+  generateSkillsScreen();
+
   add_event_listener("charEditorMenu_btnNewCharacter", "click", getSettings);
   add_event_listener("mdlSettingsSelect_btnSaveSettings", "click", getPointSelection);
   add_event_listener("mdlPointsSelect_btnSavePoints", "click", getMetatypeSelection);
@@ -259,3 +262,60 @@ function createCharacter() {
   document.getElementById('sidebar').classList.remove('d-none');
   document.getElementById('charEditorMenu').classList.add('d-none');
 }
+
+function generateSkillsScreen() {
+  const url = 'https://ptserv.ddns.net/shadowRun/data/skills.json';
+
+  ajax(url, (data) => {
+    chummer = data.chummer;
+
+    const active_skills_body = document.getElementById('tabSkills_skillsActiveBody');
+    let t = '';
+
+    for (let i = 1; i < chummer.skills.skill.length; i += 2) {
+      let skill = chummer.skills.skill[i - 1],
+        id_name = skill.name.replace(/\s+/g, "");
+
+      t += `<div class="row mt-1">
+        <div class="col-6">
+          <div class="input-group">
+            <span class="input-group-text">${skill.name} - ${skill.attribute}</span>
+            <input type="number" class="form-control" id="tabSkills_${id_name}" min="0" />
+            <span class="input-group-text" id="tabSkills_${id_name}EffectiveLevel">0</span>
+            <select class="form-select" id="tabSkills_${id_name}Specalization" value="-1">
+              <option value="-1">None</option>`;
+
+      for ( const spec of skill.specs.spec) {
+        t += '<option value="' + spec + '">' + spec + '</option>';
+      }
+
+      skill = chummer.skills.skill[i];
+      id_name = skill.name.replace(/\s+/g, "");
+            
+      t += `</select>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="input-group">
+            <span class="input-group-text">${skill.name} - ${skill.attribute}</span>
+            <input type="number" class="form-control" id="tabSkills_${id_name}" min="0" />
+            <span class="input-group-text" id="tabSkills_${id_name}EffectiveLevel">0</span>
+            <select class="form-select" id="tabSkills_${id_name}Specalization">
+              <option value="-1">None</option>`;
+
+      for ( const spec of skill.specs.spec) {
+        t += '<option value="' + spec + '">' + spec + '</option>';
+      }
+
+      t += `</select>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    active_skills_body.innerHTML += t;
+  });
+}
+
+
+

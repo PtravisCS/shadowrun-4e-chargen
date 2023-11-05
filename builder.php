@@ -46,33 +46,45 @@
                 <div class="col-md-12">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="common_tab" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="home" aria-selected="true">Common</button>
+                      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabCommon" type="button" role="tab" aria-controls="tabCommon" aria-selected="true">Common</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="skills_tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Skills</button>
+                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabSkills" type="button" role="tab" aria-controls="tabSkills" aria-selected="false">Skills</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="martial_arts_tab" data-bs-toggle="tab" data-bs-target="#martial_arts" type="button" role="tab" aria-controls="martial_arts" aria-selected="false">Martial Arts</button>
+                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabMartialArts" type="button" role="tab" aria-controls="tabMartialArts" aria-selected="false">Martial Arts</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabCyberware" type="button" role="tab" aria-controls="tabCyberware" aria-selected="false">Cyberware/Bioware</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabGear" type="button" role="tab" aria-controls="tabGear" aria-selected="false">Street Gear</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabDrones" type="button" role="tab" aria-controls="tabDrones" aria-selected="false">Vehicles/Drones</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabCharacter" type="button" role="tab" aria-controls="tabCharacter" aria-selected="false">Character Info</button>
                     </li>
                   </ul> 
                 </div>
               </div>
               <div class="tab-content" id="tab_body">
 
-                <div class="tab-pane show active" id="common" role="tabpanel" aria-labelledby="common_tab">
+                <div class="tab-pane show active" id="tabCommon" role="tabpanel" aria-labelledby="tabCommon">
                   <div class="row mt-3">
 
                     <div class="col-md-2">
                       <div class="row mb-2">
                         <div class="col-md-12">
-                          <button class="btn btn-secondary rounded-0" id="btn_add_quality">Add Quality</button>
-                          <button class="btn btn-secondary rounded-0" id="btn_remove_quality">Delete</button>
+                          <button class="btn btn-secondary rounded-0" id="tabCommon_btnAddQuality">Add Quality</button>
+                          <button class="btn btn-secondary rounded-0" id="tabCommon_btnRemoveQuality">Delete</button>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-md-12">
                           <div class="input-group">
-                            <select class="form-select" aria-label="list of character qualities" id="lst_character_qualities" size="38">
+                            <select class="form-select" aria-label="list of character qualities" id="tabCommon_lstCharacterQualities" size="38">
                             </select>
                           </div>
                         </div>
@@ -81,9 +93,9 @@
                         <div class="col-md-12">
                           <div class="input-group">
                             <span class="input-group-text">Cost</span>
-                            <span class="input-group-text" id="lbl_quality_bp">0 BP</span>
+                            <span class="input-group-text" id="tabCommon_lblQualityBP">0 BP</span>
                             <span class="input-group-text">Source</span>
-                            <span class="input-group-text" id="lbl_quality_source"></span>
+                            <span class="input-group-text" id="tabCommon_lblQualitySource"></span>
                           </div>
                         </div>
                       </div>
@@ -94,13 +106,13 @@
                         <div class="col-md-6">
                           <div class="input-group">
                             <span class="input-group-text">Alias</span>
-                            <input type="text" class="form-control" id="txt_char_alias" aria-label="Alias" />
+                            <input type="text" class="form-control" id="tabCommon_txtCharAlias" aria-label="Alias" />
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="input-group">
                             <span class="input-group-text">Metatype</span>
-                            <span class="input-group-text" id="lbl_metatype"></span>
+                            <span class="input-group-text" id="tabCommon_lblMetatype"></span>
                           </div>
                         </div>
                       </div>
@@ -109,81 +121,81 @@
                         <div class="col-md-2">Base</div>
                         <div class="col-md-2">Aug</div>
                         <div class="col-md-2">Metatype Limits</div>
-                        <div class="col-md-2" id="lbl_attr_src" >Source: </div>
+                        <div class="col-md-2" id="tabCommon_lblAttrSrc" >Source: </div>
                         <hr />
                       </div>
                       <div class="row">
                         <div class="col-md-2">Body (BOD)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_bod" aria-label="BOD" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_bod_aug" aria-label="BOD aug" /></div>
-                        <div class="col-md-2" id="lbl_char_bod_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharBod" aria-label="BOD" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharBodAug" aria-label="BOD aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharBodLimits"></div>
                         <div class="col-md-3" >
                           <div class="input-group">
                             <span class="input-group-text">Nuyen</span>
-                            <input type="text" class="form-control" id="txt_char_nuyen" aria-label="New Yen Amount" />
-                            <span class="input-group-text" id="lbl_char_real_nuyen"> = 0¥</span>
+                            <input type="text" class="form-control" id="tabCommon_txtCharNuyen" aria-label="New Yen Amount" />
+                            <span class="input-group-text" id="tabCommon_lblCharRealNuyen"> = 0¥</span>
                           </div>
                         </div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Agility (AGI)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_agi" aria-label="AGI" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_agi_aug" aria-label="AGI aug" /></div>
-                        <div class="col-md-2" id="lbl_char_agi_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharAgi" aria-label="AGI" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharAgiAug" aria-label="AGI aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharAgiLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Reaction (REA)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_rea" aria-label="REA" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_rea_aug" aria-label="REA aug" /></div>
-                        <div class="col-md-2" id="lbl_char_rea_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharRea" aria-label="REA" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharReaAug" aria-label="REA aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharReaLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Strength (STR)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_str" aria-label="STR" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_str_aug" aria-label="STR aug" /></div>
-                        <div class="col-md-2" id="lbl_char_str_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharStr" aria-label="STR" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharStrAug" aria-label="STR aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharStrLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Charisma (CHA)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_cha" aria-label="cha" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_cha_aug" aria-label="cha aug" /></div>
-                        <div class="col-md-2" id="lbl_char_cha_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharCha" aria-label="cha" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharChaAug" aria-label="cha aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharChaLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Intuition (INT)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_int" aria-label="int" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_int_aug" aria-label="int aug" /></div>
-                        <div class="col-md-2" id="lbl_char_int_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharInt" aria-label="int" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharIntAug" aria-label="int aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharIntLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Logic (LOG)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_log" aria-label="log" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_log_aug" aria-label="log aug" /></div>
-                        <div class="col-md-2" id="lbl_char_log_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharLog" aria-label="log" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharLogAug" aria-label="log aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharLogLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Willpower (WIL)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_wil" aria-label="will" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_wil_aug" aria-label="will aug" /></div>
-                        <div class="col-md-2" id="lbl_char_wil_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharWil" aria-label="will" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharWilAug" aria-label="will aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharWilLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Edge (EDG)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_edg" aria-label="edg" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_edg_aug" aria-label="edg aug" /></div>
-                        <div class="col-md-2" id="lbl_char_edg_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharEdg" aria-label="edg" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharEdgAug" aria-label="edg aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharEdgLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Magic (MAG)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_mag" aria-label="mag" /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_mag_aug" aria-label="mag aug" /></div>
-                        <div class="col-md-2" id="lbl_char_mag_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharMag" aria-label="mag" /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharMagAug" aria-label="mag aug" /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharMagLimits"></div>
                       </div>
                       <div class="row mt-1">
                         <div class="col-md-2">Resonance (RES)</div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_res" aria-label="res" disabled /></div>
-                        <div class="col-md-2"><input type="text" class="form-control" id="txt_char_res_aug" aria-label="res aug" disabled /></div>
-                        <div class="col-md-2" id="lbl_char_res_limits"></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharRes" aria-label="res" disabled /></div>
+                        <div class="col-md-2"><input type="text" class="form-control" id="tabCommon_txtCharResAug" aria-label="res aug" disabled /></div>
+                        <div class="col-md-2" id="tabCommon_lblCharResLimits"></div>
                       </div>
 
                       <!--Contacts -->
@@ -195,11 +207,11 @@
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-secondary rounded-0" id="btn_add_contact">Add Contact</button>
+                          <button class="btn btn-secondary rounded-0" id="tabCommon_btnAddContact">Add Contact</button>
                         </div> 
                       </div>
                       <div class="row">
-                        <div class="col-md-12" id="contact_rows">
+                        <div class="col-md-12" id="tabCommon_contactRows">
                         </div>
                       </div>
                       
@@ -212,11 +224,11 @@
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-secondary rounded-0" id="btn_add_enemy">Add Enemy</button>
+                          <button class="btn btn-secondary rounded-0" id="tabCommon_btnAddEnemies">Add Enemy</button>
                         </div>
                       </div>
                       <div clas="row">
-                        <div class="col-md-12" id="enemy_rows">
+                        <div class="col-md-12" id="tabCommon_enemyRows">
                         </div>
                       </div>
                     </div>
@@ -224,11 +236,103 @@
                   </div>
                 </div>
 
-                <div class="tab-pane" id="skills" role="tabpanel" aria-labelledby="skills_tab">
-
+                <div class="tab-pane" id="tabSkills" role="tabpanel">
+                    <div class="row mt-2">
+                      <div class="col-md-3">
+                        <div class="card">
+                          <div class="card-header">
+                            <strong>Skill Groups</strong>
+                          </div>
+                          <div class="card-body">
+                            <div class="row mt-1">
+                              <div class="col">Animal Husbandry</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_animalHusbandry" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Athletics</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_athletics" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Biotech</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_biotech" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Close Combat</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_closeCombat" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Conjuring</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_conjuring" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Cracking</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_cracking" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Electronics</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_electronics" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Firearms</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_firearms" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Influence</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_influence" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Mechanic</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_mechanic" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Outdoors</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_outdoors" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Sorcery</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_sorcery" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Stealth</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_stealth" min="0" /></div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col">Tasking</div>
+                              <div class="col"><input type="number" class="form-control" id="tabSkills_tasking" min="0" /></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card h-25 overflow-scroll">
+                          <div class="card-header">
+                            <strong>Active Skills</strong>
+                          </div>
+                          <div class="card-body" id="tabSkills_skillsActiveBody">
+                          </div>
+                        </div>
+                        <div class="card mt-2">
+                          <div class="card-header">
+                            <strong>Knowledge Skills</strong>
+                          </div>
+                          <div class="card-body" id="tabSkills_skillsKnowledge">
+                            <div class="row mt-1">
+                              <div class="col-3">Knowledge Skills</div>
+                              <div class="col-3">Free Skill Points Remaining: </div>
+                              <div class="col-3" id="tabSkills_freeKnowledgeSkillPointsRemaining">6 of 6</div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="col-2"><button class="btn btn-secondary" >Add Skill</button></div>
+                            </div>
+                            <div class="row mt-2" id="tabSkills_skillsKnowledgeBody">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
 
-                <div class="tab-pane" id="martial_arts" role="tabpanel" aria-labelledby="martial_arts_tab">
+                <div class="tab-pane" id="tabMartialArts" role="tabpanel">
 
                 </div>
               </div>
@@ -249,14 +353,157 @@
                   <div class="tab-content mt-2" id="sidebar_tab_body">
 
                     <div class="tab-pane show active" id="bpSummary" role="tabpanel" aria-labelledby="bpSummary">
-                      <div class="row">
-                        <div class="col-md-8" id="bpSummary_>
-                        </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblMetatype">Metatype</div>
+                        <div class="col-md-4" id="bpSummary_metatypeCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblAttributes">Primary Attributes</div>
+                        <div class="col-md-4" id="bpSummary_attributesCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblSpecialAttributes">Special Attributes</div>
+                        <div class="col-md-4" id="bpSummary_specialAttributesCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblPositiveQualities">Positive Qualities</div>
+                        <div class="col-md-4" id="bpSummary_positiveQualitiesCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblNegativeQaulities">Negative Qualities</div>
+                        <div class="col-md-4" id="bpSummary_negativeQualitiesCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblContacts">Contacts</div>
+                        <div class="col-md-4" id="bpSummary_contactsCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblEnemies">Enemies</div>
+                        <div class="col-md-4" id="bpSummary_enemiesCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblNuyen">Nuyen</div>
+                        <div class="col-md-4" id="bpSummary_nuyenCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblSkillGroups">Skill Groups</div>
+                        <div class="col-md-4" id="bpSummary_skillGroupsCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblActiveSkills">Active Skills</div>
+                        <div class="col-md-4" id="bpSummary_activeSkillsCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblKnowledgeSkills">Knowledge Skills</div>
+                        <div class="col-md-4" id="bpSummary_knowledgeSkillsCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblSpells">Spells</div>
+                        <div class="col-md-4" id="bpSummary_spellsCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblFoci">Foci</div>
+                        <div class="col-md-4" id="bpSummary_fociCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblSpirits">Spirits</div>
+                        <div class="col-md-4" id="bpSummary_spiritsCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblSprites">Sprites</div>
+                        <div class="col-md-4" id="bpSummary_spritesCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblComplexForms">Complex Forms</div>
+                        <div class="col-md-4" id="bpSummary_complexFormsCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblInitiationSubmersion">Initiation/Submersion</div>
+                        <div class="col-md-4" id="bpSummary_initiationSubmersionCost">0 BP</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="bpSummary_lblMartialArtsManeuvers">M.A. Meneuvers</div>
+                        <div class="col-md-4" id="bpSummary_martialArtsMeneuversCost">0 BP</div>
                       </div>
                     </div>
 
                     <div class="tab-pane" id="otherInfo" role="tabpanel" aria-labelledby="otherInfo">
-                      Bye
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblPhysCondTrack">Phys. Condition Track</div>
+                        <div class="col-md-4" id="otherInfo_physCondTrack">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblStunCondTrack">Stun Condition Track</div>
+                        <div class="col-md-4" id="otherInfo_stunCondTrack">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblInitiative">Initiative</div>
+                        <div class="col-md-4" id="otherInfo_initiative">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblInitiativePasses">Initiative Passes</div>
+                        <div class="col-md-4" id="otherInfo_initiativePasses">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblMatrixInitiative">Matrix Initiative</div>
+                        <div class="col-md-4" id="otherInfo_matrixInitiative">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblMatrixInitiativePasses">Matrix Initiative Passes</div>
+                        <div class="col-md-4" id="otherInfo_matrixInitiativePasses">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblAstralInitiative">Astral Initiative</div>
+                        <div class="col-md-4" id="otherInfo_astralInitiative">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblAstralInitiativePasses">Astral Initiative Passes</div>
+                        <div class="col-md-4" id="otherInfo_astralInitiativePasses">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblBallisticArmor">Ballistic Armor</div>
+                        <div class="col-md-4" id="otherInfo_ballisticArmor">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblImpactArmor">Impact Armor</div>
+                        <div class="col-md-4" id="otherInfo_impactArmor">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblEssence">Essence</div>
+                        <div class="col-md-4" id="otherInfo_essence">6</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblNuyen">Nuyen Remaining</div>
+                        <div class="col-md-4" id="otherInfo_nuyen">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblComposure">Composure</div>
+                        <div class="col-md-4" id="otherInfo_composure">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblJudgeIntentions">Judge Intentions</div>
+                        <div class="col-md-4" id="otherInfo_judgeIntentions">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblLiftCary">Lift and Carry</div>
+                        <div class="col-md-4" id="otherInfo_liftCarry">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblMemory">Memory</div>
+                        <div class="col-md-4" id="otherInfo_memory">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblMovement">Movement</div>
+                        <div class="col-md-4" id="otherInfo_movement">0/0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblSwim">Swim</div>
+                        <div class="col-md-4" id="otherInfo_swim">0</div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-md-8" id="otherInfo_lblFly">Fly</div>
+                        <div class="col-md-4" id="otherInfo_fly">0</div>
+                      </div>
                     </div>
 
                   </div>
